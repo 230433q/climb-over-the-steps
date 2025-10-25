@@ -158,75 +158,75 @@ void StartDefaultTask(void *argument)
   /* Infinite loop */
   for(;;)
   {
-//				if(flag2 == 1)
-//		{
+				if(flag2 == 1)
+		{
 
-//				ZDrive[0].enable = 1;
-//   			ZDrive[0].begin = 1;
-//				ZDrive[1].enable = 1;
-//				ZDrive[1].begin = 1;
-//				ZDrive[0].Mode = Zdrive_Position;
-//				ZDrive[1].Mode = Zdrive_Position;
-//				ZDrive[0].ValueSetNow.angle = -(float)angle_back;
-//				ZDrive[1].ValueSetNow.angle = -(float)angle_back;
-//		}
-//		else{
-//			  ZDrive[0].enable = 0;
-//				ZDrive[0].begin = 0;
-//				ZDrive[1].enable = 0;
-//				ZDrive[1].begin = 0;
-//				ZDrive[0].Mode = Zdrive_Position;
-//				ZDrive[1].Mode = Zdrive_Position;
-//				ZDrive[0].ValueSetNow.angle = -(float)angle_back;
-//				ZDrive[1].ValueSetNow.angle = -(float)angle_back;
-//		}
-//				if(flag1 == 1)
-//		{
-//				ZDrive[2].enable = 1;
-//   			ZDrive[2].begin = 1;
-//				ZDrive[3].enable = 1;
-//				ZDrive[3].begin = 1;
-//				ZDrive[2].Mode = Zdrive_Position;
-//				ZDrive[3].Mode = Zdrive_Position;
-//				ZDrive[2].ValueSetNow.angle = (float)angle_front;
-//				ZDrive[3].ValueSetNow.angle = (float)angle_front;
-//		}
-//		else{
-//			  ZDrive[2].enable = 0;
-//				ZDrive[2].begin = 0;
-//				ZDrive[3].enable = 0;
-//				ZDrive[3].begin = 0;
-//				ZDrive[2].Mode = Zdrive_Position;
-//				ZDrive[3].Mode = Zdrive_Position;
-//				ZDrive[2].ValueSetNow.angle = (float)angle_front;
-//				ZDrive[3].ValueSetNow.angle = (float)angle_front;
-//		}
-//		    if(ok == 1){
-//			  if(ok1){
-//		    flag1 = 1;
-//			  osDelay (10);
-//			  angle_front = -60;
-//			  osDelay(5000);
-//				}
-//		    if(ok2){
-//				flag2 = 1;
-//			  osDelay(10);
-//			  angle_front = 0;
-//			  angle_back = -90;
-//			  front_speed = 10;
-//				osDelay(5000);
-//				}
-//			  if(ok3){
-//				angle_back = 0;
-//				front_speed = 0;
-//				}
-//				if(ok4){
-//				flag1 = 0;
-//				flag2 = 0;
-//				flag3 = 0;
-//				}
-//			  ok =0;
-//		}
+				ZDrive[0].enable = 1;
+   			ZDrive[0].begin = 1;
+				ZDrive[1].enable = 1;
+				ZDrive[1].begin = 1;
+				ZDrive[0].Mode = Zdrive_Position;
+				ZDrive[1].Mode = Zdrive_Position;
+				ZDrive[0].ValueSetNow.angle = -(float)angle_back;
+				ZDrive[1].ValueSetNow.angle = -(float)angle_back;
+		}
+		else{
+			  ZDrive[0].enable = 0;
+				ZDrive[0].begin = 0;
+				ZDrive[1].enable = 0;
+				ZDrive[1].begin = 0;
+				ZDrive[0].Mode = Zdrive_Position;
+				ZDrive[1].Mode = Zdrive_Position;
+				ZDrive[0].ValueSetNow.angle = -(float)angle_back;
+				ZDrive[1].ValueSetNow.angle = -(float)angle_back;
+		}
+				if(flag1 == 1)
+		{
+				ZDrive[2].enable = 1;
+   			ZDrive[2].begin = 1;
+				ZDrive[3].enable = 1;
+				ZDrive[3].begin = 1;
+				ZDrive[2].Mode = Zdrive_Position;
+				ZDrive[3].Mode = Zdrive_Position;
+				ZDrive[2].ValueSetNow.angle = (float)angle_front;
+				ZDrive[3].ValueSetNow.angle = (float)angle_front;
+		}
+		else{
+    ZDrive[2].enable = 0;
+				ZDrive[2].begin = 0;
+				ZDrive[3].enable = 0;
+				ZDrive[3].begin = 0;
+				ZDrive[2].Mode = Zdrive_Position;
+				ZDrive[3].Mode = Zdrive_Position;
+				ZDrive[2].ValueSetNow.angle = (float)angle_front;
+				ZDrive[3].ValueSetNow.angle = (float)angle_front;
+		}
+		    if(ok == 1){
+			  if(ok1){
+		    flag1 = 1;
+			  osDelay (10);
+			  angle_front = -60;
+			  osDelay(5000);
+				}
+		    if(ok2){
+				flag2 = 1;
+			  osDelay(10);
+			  angle_front = 0;
+			  angle_back = -90;
+			  front_speed = 10;
+				osDelay(5000);
+				}
+			  if(ok3){
+				angle_back = 0;
+				front_speed = 0;
+				}
+				if(ok4){
+				flag1 = 0;
+				flag2 = 0;
+				flag3 = 0;
+				}
+			  ok =0;
+		}
     osDelay(1);
   }
   /* USER CODE END StartDefaultTask */

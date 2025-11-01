@@ -27,6 +27,8 @@
 /* USER CODE BEGIN Includes */
 #include "zdrive.h"
 #include "dj.h"
+#include "valve.h"
+#include "LED.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -227,7 +229,8 @@ void StartDefaultTask(void *argument)
 //				}
 //			  ok =0;
 //		}
-    osDelay(1);
+    LED_Flow();
+		osDelay(1);
   }
   /* USER CODE END StartDefaultTask */
 }

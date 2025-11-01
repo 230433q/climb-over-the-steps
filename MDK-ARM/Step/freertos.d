@@ -47,3 +47,5 @@ step\freertos.o: D:\keil\ARM\ARMcc5\Bin\..\include\stdio.h
 step\freertos.o: D:\keil\ARM\ARMcc5\Bin\..\include\stdbool.h
 step\freertos.o: ../Core/Inc/can.h
 step\freertos.o: ../motor/Inc/dj.h
+step\freertos.o: ../Core/Inc/valve.h
+step\freertos.o: ../Core/Inc/LED.h

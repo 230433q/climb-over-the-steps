@@ -1049,20 +1049,20 @@ HAL_StatusTypeDef HAL_CAN_Start(CAN_HandleTypeDef *hcan)
     tickstart = HAL_GetTick();
 
     /* Wait the acknowledge */
-//    while ((hcan->Instance->MSR & CAN_MSR_INAK) != 0U)
-//    {
-//      /* Check for the Timeout */
-//      if ((HAL_GetTick() - tickstart) > CAN_TIMEOUT_VALUE)
-//      {
-//        /* Update error code */
-//        hcan->ErrorCode |= HAL_CAN_ERROR_TIMEOUT;
+    while ((hcan->Instance->MSR & CAN_MSR_INAK) != 0U)
+    {
+      /* Check for the Timeout */
+      if ((HAL_GetTick() - tickstart) > CAN_TIMEOUT_VALUE)
+      {
+        /* Update error code */
+        hcan->ErrorCode |= HAL_CAN_ERROR_TIMEOUT;
 
-//        /* Change CAN state */
-//        hcan->State = HAL_CAN_STATE_ERROR;
+        /* Change CAN state */
+        hcan->State = HAL_CAN_STATE_ERROR;
 
-//        return HAL_ERROR;
-//      }
-//    }
+        return HAL_ERROR;
+      }
+    }
 
     /* Reset the CAN ErrorCode */
     hcan->ErrorCode = HAL_CAN_ERROR_NONE;

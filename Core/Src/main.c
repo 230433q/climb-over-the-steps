@@ -27,6 +27,7 @@
 /* USER CODE BEGIN Includes */
 #include "dj.h"
 #include "zdrive.h"
+#include "valve.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -211,7 +212,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 	}
 	if(htim->Instance ==TIM2 ){
 		 CAN_Queue_Pop(&ZDrive_Queue);
-		 CAN_Queue_Pop(&CAN2_Queue);
 		 djfunc();
 	}
   /* USER CODE END Callback 1 */

@@ -395,6 +395,11 @@
           <GroupName>Application/User/Core</GroupName>
           <Files>
             <File>
+              <FileName>LED.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\LED.c</FilePath>
+            </File>
+            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/main.c</FilePath>
@@ -756,6 +761,11 @@
               <FileName>zdrive.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\motor\Src\zdrive.c</FilePath>
+            </File>
+            <File>
+              <FileName>valve.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\valve.c</FilePath>
             </File>
           </Files>
         </Group>

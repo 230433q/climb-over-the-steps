@@ -49,3 +49,4 @@ step\main.o: ../motor/Inc/dj.h
 step\main.o: D:\keil\ARM\ARMcc5\Bin\..\include\stdbool.h
 step\main.o: ../motor/Inc/zdrive.h
 step\main.o: D:\keil\ARM\ARMcc5\Bin\..\include\stdio.h
+step\main.o: ../Core/Inc/valve.h

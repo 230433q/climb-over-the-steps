@@ -1,5 +1,6 @@
 --cpu=Cortex-M4.fp.sp
 "step\startup_stm32f405xx.o"
+"step\led.o"
 "step\main.o"
 "step\gpio.o"
 "step\freertos.o"
@@ -38,6 +39,7 @@
 "step\dj.o"
 "step\mathfun.o"
 "step\zdrive.o"
+"step\valve.o"
 --strict --scatter "Step\Step.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
